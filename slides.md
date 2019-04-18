@@ -121,11 +121,11 @@ Proliferation of row variables for records containing records. (Compare with how
 error :: String -> Error
 
 throw :: forall eff a
-        . String
-        -> Eff (exception :: EXCEPTION | eff) a
+       . String
+      -> Eff (exception :: EXCEPTION | eff) a
 
 try :: forall eff a
-        . Eff (exception :: EXCEPTION | eff) a
+     . Eff (exception :: EXCEPTION | eff) a
     -> Eff eff (Either Error a)
 ```
 
